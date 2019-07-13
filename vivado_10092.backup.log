@@ -1,0 +1,992 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 21 09:47:59 2019
+# Process ID: 10092
+# Current directory: D:/UT an3 sem2/SSC/AMD_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4696 D:\UT an3 sem2\SSC\AMD_processor\AMD_processor.xpr
+# Log file: D:/UT an3 sem2/SSC/AMD_processor/vivado.log
+# Journal file: D:/UT an3 sem2/SSC/AMD_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 679.727 ; gain = 117.191
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue May 21 09:51:50 2019] Launched synth_1...
+Run output will be captured here: D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/synth_1/runme.log
+[Tue May 21 09:51:50 2019] Launched impl_1...
+Run output will be captured here: D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 21 09:54:26 2019] Launched impl_1...
+Run output will be captured here: D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1667.344 ; gain = 926.133
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A75A09A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A75A09A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75A09A
+set_property PROGRAM.FILE {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/AMD.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/AMD.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicroInstructions'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MPG'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SSD'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd:61]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit amd in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1716.836 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd:61]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit amd in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd}}] -no_script -reset -force -quiet
+remove_files  {{D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd} {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd}}
+file delete -force {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd} {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd}
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/UT -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/UT" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue May 21 11:23:42 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1833.297 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.297 ; gain = 0.000
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {1 0ns}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1833.297 ; gain = 0.000
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+add_force {/AMD/btn[0]} -radix hex {1 0ns}
+run 10 ns
+current_wave_config {AMD_behav.wcfg}
+AMD_behav.wcfg
+add_wave {{/AMD/cnt}} 
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicroInstructions'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1833.297 ; gain = 0.000
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/B} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/D} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {3 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix unsigned {10 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/btn} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {3 0ns}
+add_force {/AMD/B} -radix hex {a 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/RAM_component/A} -radix hex {2 0ns}
+add_force {/AMD/RAM_component/B} -radix hex {3 0ns}
+add_force {/AMD/btn} -radix hex {2 0ns}
+run 10 ns
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AMD/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {2 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {2 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+current_wave_config {AMD_behav.wcfg}
+AMD_behav.wcfg
+add_wave {{/AMD/cnt}} 
+run 10 ns
+add_force {/AMD/btn} -radix hex {2 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {2 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {6 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {3 0ns}
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicroInstructions'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1983.781 ; gain = 0.000
+add_force {/AMD/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {6 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1983.781 ; gain = 0.000
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {2 0ns}
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {2 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {6 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1983.781 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {6 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {3 0ns}
+add_force {/AMD/B} -radix hex {a 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1983.781 ; gain = 0.000
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {6 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/A} -radix hex {3 0ns}
+add_force {/AMD/B} -radix hex {a 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/D} -radix hex {9 0ns}
+add_force {/AMD/A} -radix hex {5 0ns}
+add_force {/AMD/B} -radix unsigned {13 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/D} -radix hex {8 0ns}
+add_force {/AMD/B} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {9 0ns}
+add_force {/AMD/D} -radix hex {9 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {6 0ns}
+add_force {/AMD/B} -radix unsigned {14 0ns}
+run 10 ns
+add_force {/AMD/D} -radix hex {10 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '10': Object size 4 does not match size of given value 10.
+add_force {/AMD/D} -radix hex {a 0ns}
+add_force {/AMD/CIn} -radix hex {1 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {f 0ns}
+add_force {/AMD/B} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {8 0ns}
+add_force {/AMD/B} -radix unsigned {13 0ns}
+add_force {/AMD/D} -radix hex {4 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/CIn} -radix hex {1 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AMD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj AMD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AMD'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto da653eed42fd47ec9766ebb89899eddf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AMD_behav xil_defaultlib.AMD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.QRegister [qregister_default]
+Compiling architecture behavioral of entity xil_defaultlib.Latch [latch_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroInstructions [microinstructions_default]
+Compiling architecture behavioral of entity xil_defaultlib.amd
+Built simulation snapshot AMD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AMD_behav -key {Behavioral:sim_1:Functional:AMD} -tclbatch {AMD.tcl} -view {{D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {D:/UT an3 sem2/SSC/AMD_processor/AMD_behav.wcfg}
+WARNING: Simulation object /AMD/buton was not found in the design.
+source AMD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AMD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1983.781 ; gain = 0.000
+add_force {/AMD/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/AMD/btn} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {2 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+add_force {/AMD/D} -radix hex {0 0ns}
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {6 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/B} -radix hex {3 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {3 0ns}
+add_force {/AMD/B} -radix hex {a 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/D} -radix hex {9 0ns}
+add_force {/AMD/A} -radix hex {5 0ns}
+add_force {/AMD/B} -radix hex {d 0ns}
+run 10 ns
+add_force {/AMD/D} -radix hex {8 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/B} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/D} -radix hex {9 0ns}
+add_force {/AMD/B} -radix hex {9 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {6 0ns}
+add_force {/AMD/B} -radix hex {e 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/D} -radix hex {a 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/CIn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/CIn} -radix hex {0 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {f 0ns}
+add_force {/AMD/B} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/D} -radix hex {8 0ns}
+add_force {/AMD/A} -radix hex {4 0ns}
+add_force {/AMD/CIn} -radix hex {1 0ns}
+add_force {/AMD/RAM3} -radix hex {1 0ns}
+add_force {/AMD/Q3} -radix hex {1 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/A} -radix hex {e 0ns}
+add_force {/AMD/B} -radix hex {9 0ns}
+add_force {/AMD/D} -radix hex {1 0ns}
+add_force {/AMD/CIn} -radix hex {1 0ns}
+add_force {/AMD/RAM0} -radix hex {1 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/Q0} -radix hex {1 0ns}
+add_force {/AMD/Q3} -radix hex {0 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {b 0ns}
+add_force {/AMD/A} -radix hex {9 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+add_force {/AMD/RAM0} -radix hex {0 0ns}
+add_force {/AMD/RAM3} -radix hex {1 0ns}
+add_force {/AMD/Q0} -radix hex {0 0ns}
+add_force {/AMD/A} -radix hex {0 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+add_force {/AMD/B} -radix hex {e 0ns}
+add_force {/AMD/RAM0} -radix hex {1 0ns}
+add_force {/AMD/RAM3} -radix hex {0 0ns}
+add_force {/AMD/btn} -radix hex {1 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd} w ]
+add_files {{D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd}}
+update_compile_order -fileset sources_1
+close [ open {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd} w ]
+add_files {{D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue May 21 13:27:57 2019] Launched synth_1...
+Run output will be captured here: D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/synth_1/runme.log
+[Tue May 21 13:27:57 2019] Launched impl_1...
+Run output will be captured here: D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 21 13:39:48 2019] Launched impl_1...
+Run output will be captured here: D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A75A09A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A75A09A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75A09A
+set_property PROGRAM.FILE {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/AMD.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.runs/impl_1/AMD.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 13:45:49 2019...

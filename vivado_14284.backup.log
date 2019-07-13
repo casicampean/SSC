@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 21 08:35:02 2019
+# Process ID: 14284
+# Current directory: D:/UT an3 sem2/SSC/AMD_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14228 D:\UT an3 sem2\SSC\AMD_processor\AMD_processor.xpr
+# Log file: D:/UT an3 sem2/SSC/AMD_processor/vivado.log
+# Journal file: D:/UT an3 sem2/SSC/AMD_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 690.555 ; gain = 125.906
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: AMD
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 812.898 ; gain = 69.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AMD' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:45]
+INFO: [Synth 8-226] default block is never used [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:108]
+INFO: [Synth 8-226] default block is never used [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:123]
+WARNING: [Synth 8-614] signal 'Q' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:153]
+WARNING: [Synth 8-614] signal 'F' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:153]
+WARNING: [Synth 8-614] signal 'RAM3' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:166]
+WARNING: [Synth 8-614] signal 'F' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:166]
+WARNING: [Synth 8-614] signal 'RAM0' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:49]
+INFO: [Synth 8-226] default block is never used [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:64]
+WARNING: [Synth 8-614] signal 'R' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'S' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'G3' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'P3' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'G2' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'P2' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'P1' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'G0' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'G1' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+WARNING: [Synth 8-614] signal 'P0' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/ALU.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/RAM.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (2#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/RAM.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'QRegister' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/QRegister.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'QRegister' (3#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/QRegister.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'Latch' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/Latch.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Latch' (4#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/Latch.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'MicroInstructions' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd:41]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd:87]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'MicroInstructions' (5#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MicroInstructions.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'MPG' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (6#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/MPG.vhd:42]
+WARNING: [Synth 8-614] signal 'Y' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:252]
+WARNING: [Synth 8-614] signal 'cnt' is read in the process but is not in the sensitivity list [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'SSD' [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (7#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/SSD.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'AMD' (8#1) [D:/UT an3 sem2/SSC/AMD_processor/AMD_processor.srcs/sources_1/new/AMD.vhd:45]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[15]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[14]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[13]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[12]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[11]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[10]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[9]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[8]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[7]
+WARNING: [Synth 8-3331] design AMD has unconnected port led[6]
+WARNING: [Synth 8-3331] design AMD has unconnected port btn[4]
+WARNING: [Synth 8-3331] design AMD has unconnected port btn[3]
+WARNING: [Synth 8-3331] design AMD has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 858.289 ; gain = 114.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 858.289 ; gain = 114.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 858.289 ; gain = 114.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UT an3 sem2/SSC/proiect/constr.xdc]
+WARNING: [Vivado 12-507] No nets matched 'btn_IBUF[0]'. [D:/UT an3 sem2/SSC/proiect/constr.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UT an3 sem2/SSC/proiect/constr.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/UT an3 sem2/SSC/proiect/constr.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1182.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1197.391 ; gain = 453.730
+23 Infos, 33 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1197.391 ; gain = 453.730

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AMD_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AMD" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="984916000fs"></ZoomStartTime>
+      <ZoomEndTime time="1083016001fs"></ZoomEndTime>
+      <Cursor1Time time="1013416000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="159"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/AMD/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/buton" type="logic">
+      <obj_property name="ElementShortName">buton</obj_property>
+      <obj_property name="ObjectShortName">buton</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/CIn" type="logic">
+      <obj_property name="ElementShortName">CIn</obj_property>
+      <obj_property name="ObjectShortName">CIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/RAM0" type="logic">
+      <obj_property name="ElementShortName">RAM0</obj_property>
+      <obj_property name="ObjectShortName">RAM0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/RAM3" type="logic">
+      <obj_property name="ElementShortName">RAM3</obj_property>
+      <obj_property name="ObjectShortName">RAM3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Q0" type="logic">
+      <obj_property name="ElementShortName">Q0</obj_property>
+      <obj_property name="ObjectShortName">Q0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Q3" type="logic">
+      <obj_property name="ElementShortName">Q3</obj_property>
+      <obj_property name="ObjectShortName">Q3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/A" type="array">
+      <obj_property name="ElementShortName">A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/D" type="array">
+      <obj_property name="ElementShortName">D[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/COut" type="logic">
+      <obj_property name="ElementShortName">COut</obj_property>
+      <obj_property name="ObjectShortName">COut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/OVR" type="logic">
+      <obj_property name="ElementShortName">OVR</obj_property>
+      <obj_property name="ObjectShortName">OVR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/F3" type="logic">
+      <obj_property name="ElementShortName">F3</obj_property>
+      <obj_property name="ObjectShortName">F3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/G" type="logic">
+      <obj_property name="ElementShortName">G</obj_property>
+      <obj_property name="ObjectShortName">G</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/P" type="logic">
+      <obj_property name="ElementShortName">P</obj_property>
+      <obj_property name="ObjectShortName">P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Instr" type="array">
+      <obj_property name="ElementShortName">Instr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Func" type="array">
+      <obj_property name="ElementShortName">Func[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Func[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Op" type="array">
+      <obj_property name="ElementShortName">Op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Op[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Dest" type="array">
+      <obj_property name="ElementShortName">Dest[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Dest[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Q" type="array">
+      <obj_property name="ElementShortName">Q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/R" type="array">
+      <obj_property name="ElementShortName">R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/S" type="array">
+      <obj_property name="ElementShortName">S[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/F" type="array">
+      <obj_property name="ElementShortName">F[3:0]</obj_property>
+      <obj_property name="ObjectShortName">F[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ShiftQ" type="array">
+      <obj_property name="ElementShortName">ShiftQ[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ShiftQ[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ShiftF" type="array">
+      <obj_property name="ElementShortName">ShiftF[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ShiftF[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/AOut" type="array">
+      <obj_property name="ElementShortName">AOut[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AOut[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/BOut" type="array">
+      <obj_property name="ElementShortName">BOut[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BOut[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ALatch" type="array">
+      <obj_property name="ElementShortName">ALatch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALatch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/BLatch" type="array">
+      <obj_property name="ElementShortName">BLatch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BLatch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Y" type="array">
+      <obj_property name="ElementShortName">Y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/Z" type="array">
+      <obj_property name="ElementShortName">Z[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Z[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/dig" type="array">
+      <obj_property name="ElementShortName">dig[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dig[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ShiftRAMDown" type="logic">
+      <obj_property name="ElementShortName">ShiftRAMDown</obj_property>
+      <obj_property name="ObjectShortName">ShiftRAMDown</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ShiftRAMUp" type="logic">
+      <obj_property name="ElementShortName">ShiftRAMUp</obj_property>
+      <obj_property name="ObjectShortName">ShiftRAMUp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ShiftQDown" type="logic">
+      <obj_property name="ElementShortName">ShiftQDown</obj_property>
+      <obj_property name="ObjectShortName">ShiftQDown</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/ShiftQUp" type="logic">
+      <obj_property name="ElementShortName">ShiftQUp</obj_property>
+      <obj_property name="ObjectShortName">ShiftQUp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/QEn" type="logic">
+      <obj_property name="ElementShortName">QEn</obj_property>
+      <obj_property name="ObjectShortName">QEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/EnRAM" type="logic">
+      <obj_property name="ElementShortName">EnRAM</obj_property>
+      <obj_property name="ObjectShortName">EnRAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/AorF" type="logic">
+      <obj_property name="ElementShortName">AorF</obj_property>
+      <obj_property name="ObjectShortName">AorF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AMD/butonMPGOut" type="logic">
+      <obj_property name="ElementShortName">butonMPGOut</obj_property>
+      <obj_property name="ObjectShortName">butonMPGOut</obj_property>
+   </wvobject>
+</wave_config>
